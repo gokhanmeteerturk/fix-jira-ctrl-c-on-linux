@@ -1,6 +1,6 @@
 # Fix "`Copy` doesn't work on Jira" issue
 
-On some linux distros, copy function doesn't work on Jira.
+On some linux machines, copy function doesn't work on Jira.
 
 This script is an equally nasty solutions to Jira's nasty navigator.clipBoard override.
 
