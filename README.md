@@ -9,3 +9,5 @@ You can inject the js code from solution.js to Jira web pages with the help of a
 Script basically overrides `document.oncopy` so when you use ctrl+c or Copy command from the context menu, it memorizes selected text, opens a new window, runs `navigator`'s `writeText` method with the memorized text and closes the window.
 
 Only tested in Chrome v102 on Ubuntu machine.
+
+If you use Resource Override extension, https://`companyname`.atlassian.net/browse/* should be sufficient as the Tab Url (Don't forget the asterix).
