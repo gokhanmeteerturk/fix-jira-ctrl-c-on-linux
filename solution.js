@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function (event)
             const copyString = window.getSelection()
                 .toString();
             const copyScript =
-                "<!DOCTYPE html><html><head><meta charset='utf-8'></meta><script>async function copy(){ await navigator.clipboard.writeText('" +
-                copyString.replace("'", "\'") +
-                "');window.close();}copy();</script>";
+                "<!DOCTYPE html><html><head><meta charset='utf-8'></meta><script>async function copy(){ await navigator.clipboard.writeText(`" +
+                copyString.replace(/`/g, "\\`") +
+                "`);window.close();}copy();</script>";
             let new_window = window.open(URL
                 .createObjectURL(new Blob([copyScript],
                 {
